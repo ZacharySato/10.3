@@ -37,10 +37,11 @@ public class Main {
         //модификатор суммируется индекс раз
         System.out.println(Arrays.toString(
                 getFilledArray(SIZE, number, (x, y) -> {
-                    for (int i = 0; i < x; i++) {
-                        y += y;
+                    int n = y;
+                    for (int i = 0; i <= x; i++) {
+                        n += y;
                     }
-                    return y;
+                    return n;
                 }))
         );
         //разность произведения и суммы
