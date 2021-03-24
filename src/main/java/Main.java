@@ -46,9 +46,7 @@ public class Main {
         );
         //разность произведения и суммы
         System.out.println(Arrays.toString(
-                getFilledArray(SIZE, number, (x, y) -> {
-                    return x * y - (x + y);
-                }))
+                getFilledArray(SIZE, number, (x, y) -> x * y - (x + y)))
         );
 
     }
